@@ -7,9 +7,29 @@
 
 import SwiftUI
 
+// MARK: Stored properties
+let flipOne = Int.random(in: 1...2)
+
+
+// MARK: Computed properties
 struct TileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+        if flipOne == 1{
+            
+        } else {
+            
+        }
+        
+        
+        
+        TriangleTopRight()
+            .stroke(.red)
+            .fill(.blue)
+        // Make the shape be a square
+            .aspectRatio(1.0, contentMode: .fit)
+        
+    }
     }
 }
 

@@ -11,7 +11,7 @@ import SwiftUI
 struct GenerativeArtApp: App {
     var body: some Scene {
         DocumentGroup(newDocument: GenerativeArtDocument()) { file in
-            ContentView(document: file.$document)
+            TileView()
         }
     }
 }
