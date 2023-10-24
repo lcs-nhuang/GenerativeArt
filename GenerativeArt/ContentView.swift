@@ -11,7 +11,9 @@ struct ContentView: View {
     @Binding var document: GenerativeArtDocument
 
     var body: some View {
-        TextEditor(text: $document.text)
+        Rectangle()
+            .aspectRatio(1.0, contentMode: .fit)
+    
     }
 }
 
